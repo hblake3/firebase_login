@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Human Resources Event Calendar</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="speech-bubble-container">
+            <div id="signInMessage" class="speech-bubble" style="display: none;">
+                <div class="speech-bubble-content">
+                    Test Speech Bubble
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <form method="post" action="">
+                
+                <h1 id ="welcomeMessage">Welcome</h1>               
+
+                <div id = "login_form">
+                    <!-- Username Input Box -->
+                    <div class="input-box">
+                        <input type="text" id="login_email" placeholder="Email Address" required> <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <!-- Password Input Box -->
+                    <div class="input-box">
+                        <input type="password" id="login_password" placeholder="Password" required> <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <!-- Remember Me Checkbox & Forgot Password Link -->
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember Me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button class="btn" id="login_submit" type="submit">Login</button>
+
+                    <div class="subtext-links">
+                        <p>Don't have an account? <a href="register.html">Register</a></p>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="../src/firebaseAuth.js"></script>
+    <script type="module" src="../src/login.js"></script>
+    <script type="module" src="../src/UiManager.js"></script>
+</body>
+
+</html>
